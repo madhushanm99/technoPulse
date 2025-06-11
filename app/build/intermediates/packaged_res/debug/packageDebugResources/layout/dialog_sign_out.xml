@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_border_blue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/sign_out_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Really want to sign out?"
+        android:textSize="16sp"
+        android:textColor="#222"
+        android:gravity="center"
+        android:layout_marginBottom="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:textColor="#FFF"
+            android:background="@drawable/rounded_blue_button"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#2962FF"
+            android:background="@drawable/outline_button"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

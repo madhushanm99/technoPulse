@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16170083630",
+    "project_id": "techno-news-dc605",
+    "storage_bucket": "techno-news-dc605.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16170083630:android:f4d4a843c9f9d8c21986bf",
+        "android_client_info": {
+          "package_name": "com.example.techno_pulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoIqWj2WBlfUz12zRi1xSzdETnIfbjeRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

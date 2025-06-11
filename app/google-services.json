@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218000705618",
+    "project_id": "technopulse",
+    "storage_bucket": "technopulse.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218000705618:android:15ae0554691407485bf78b",
+        "android_client_info": {
+          "package_name": "com.example.techno_pulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH0pow9Twp6fUNzE6y2RcVgDGbQuL4WeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

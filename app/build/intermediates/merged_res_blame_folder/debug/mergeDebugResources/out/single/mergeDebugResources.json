@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_comment.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_comment.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_user.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_user.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_logout.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_signup.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_visibility.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_visibility.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_user_details.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_user_details.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_circle_bg.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/circle_bg.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_dialog_edit_user_info.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/dialog_edit_user_info.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/anim_slide_down.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/anim/slide_down.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news1.jpg.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news1.jpg"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news.jpg.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news.jpg"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_profile_pic.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/profile_pic.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_dev_profile_pic.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/dev_profile_pic.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/anim_slide_up.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/anim/slide_up.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_dialog_forgot_password.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/dialog_forgot_password.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_article_detail.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_article_detail.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news2.jpg.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news2.jpg"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_item_featured_news.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/item_featured_news.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_login.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news3.jpg.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news3.jpg"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_menu.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_rounded_corners.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/rounded_corners.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/xml_backup_rules.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_developer_details.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_developer_details.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_edittext_bg.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/edittext_bg.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_developer.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_developer.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_tablayout_bg.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/tablayout_bg.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_app_logo.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/app_logo.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/menu_drawer_menu.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/menu/drawer_menu.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_app_logo2.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/app_logo2.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_splash2.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_splash2.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_nav_header.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_rounded_blue_button.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/rounded_blue_button.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_activity_splash.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news4.jpg.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news4.jpg"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.techno_pulse.app-main-71:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_outline_button.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/outline_button.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_rounded_border_blue.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/rounded_border_blue.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_settings.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_featured_news_gradient_overlay.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/featured_news_gradient_overlay.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_item_news_card.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/item_news_card.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_favorite_outline.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_favorite_outline.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_outline_edittext.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/outline_edittext.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_back.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_tab_selector.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/tab_selector.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/layout_dialog_sign_out.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/layout/dialog_sign_out.xml"
+    },
+    {
+        "merged": "com.example.techno_pulse.app-debug-69:/drawable_ic_visibility_off.xml.flat",
+        "source": "com.example.techno_pulse.app-main-71:/drawable/ic_visibility_off.xml"
+    }
+]

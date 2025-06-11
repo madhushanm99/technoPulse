@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="30dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_favorite_outline"
+                android:contentDescription="Favorite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="276"
+                android:textColor="#2962FF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_comment"
+                android:contentDescription="Comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textColor="#2962FF"
+                android:textSize="16sp"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Date and Meta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:layout_marginVertical="9dp">
+
+            <TextView
+                android:id="@+id/article_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="April 30, 2025"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" . "
+                android:textColor="#888888"
+                android:textSize="13sp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purawara Wasanthaya Aurudu Uthsawaya 2025 Celebrated with Cultural Splendor"
+            android:textColor="#111111"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="9dp"/>
+
+        <!-- Author -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="9dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/profile_pic"
+                android:background="@drawable/circle_bg"
+                android:scaleType="centerCrop"
+                android:contentDescription="Author" />
+
+            <TextView
+                android:id="@+id/article_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiruka Thathsara"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Main Image -->
+        <ImageView
+            android:id="@+id/article_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/featured_news"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="Article Image"
+            android:layout_marginVertical="9dp"/>
+
+        <!-- Caption -->
+        <TextView
+            android:id="@+id/article_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Held on April 26th at the Faculty of Technology, University of Colombo"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Article Body -->
+        <TextView
+            android:id="@+id/article_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="In a vibrant celebration of Sinhala and Tamil New Year traditions, the Purawara Wasanthaya – Aurudu Uthsawaya 2025 was successfully held on the 26th of April 2025 at the Faculty of Technology premises, University of Colombo. The event was proudly organized by the Students Welfare Society of the faculty.\n\nThe festival brought together students, academic staff, and well-wishers in a colorful display of unity and culture. Traditional games, music, dance performances, and mouth-watering festive treats filled the day with joy and excitement. The Aurudu Kumara and Kumariya contests were a special highlight, alongside events such as pillow fighting (Kotta pora), tug-of-war, and the ever-popular kana mutti bindeema."
+            android:textColor="#222222"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
