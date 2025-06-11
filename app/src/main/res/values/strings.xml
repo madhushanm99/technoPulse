@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Techno_Pulse</string>
+    <string name="tab_sports">Sports</string>
+    <string name="tab_academic">Academic</string>
+    <string name="tab_events">Events</string>
+    <string name="latest_news">Latest News</string>
+
 </resources>
