@@ -26,6 +26,18 @@
         </activity>
         <activity android:name=".Splash2Activity" />
 
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Techno_Pulse"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Techno_Pulse" />
+
 
 
     </application>
