@@ -18,15 +18,15 @@ public class SplashActivity extends AppCompatActivity {
             FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
             if (currentUser != null) {
-                // User is signed in, redirect to dashboard
-                startActivity(new Intent(SplashActivity.this, DashboardActivity.class));
+
+
             } else {
-                // User not signed in, go to login or intro screen
+
                 startActivity(new Intent(SplashActivity.this, Splash2Activity.class));
             }
 
-            finish(); // Prevent back navigation to this activity
-        }, 2000); // 2 seconds delay
+            finish();
+        }, 2500);
     }
 }
 

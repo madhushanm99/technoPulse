@@ -16,7 +16,7 @@
             android:id="@+id/logoImage"
             android:layout_width="wrap_content"
             android:layout_height="120dp"
-            android:src="@drawable/app_logo"
+            android:src="@drawable/technopulse_logo2"
             android:layout_marginBottom="50dp"
             android:contentDescription="Logo"/>
 
@@ -25,8 +25,8 @@
         android:id="@+id/helloTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        android:textSize="28sp"
+        android:text=" Knowledge Begins With Awareness."
+        android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="#111111"
         android:layout_gravity="center"
@@ -37,7 +37,9 @@
         android:id="@+id/welcomeMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to FOT News, where your go to place for the latest headlines and updates that matters to you."
+        android:text="Stay connected with FoT News,
+your personal gateway to every headline,
+update, and event that matters."
         android:textSize="16sp"
         android:textColor="#222222"
         android:layout_gravity="center"
@@ -64,7 +66,7 @@
         android:text="Sign Up"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:textColor="#2962FF"
+        android:textColor="#3e50b4"
         android:background="@drawable/outline_button"/>
 
     </LinearLayout>
