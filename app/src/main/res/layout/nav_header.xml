@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="160dp"
         android:layout_height="120dp"
-        android:src="@drawable/app_logo"
+        android:src="@drawable/technopulse_logo"
         android:contentDescription="Logo"/>
 
 </LinearLayout>
