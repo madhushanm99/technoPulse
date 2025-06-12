@@ -11,25 +11,23 @@
         android:layout_height="match_parent"
         android:padding="12dp">
 
-        <!-- News Image on the right, vertically centered -->
         <ImageView
             android:id="@+id/news_image"
             android:layout_width="80dp"
             android:layout_height="66dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/featured_news"
+            android:src="@drawable/sport_news"
             android:background="@drawable/rounded_corners"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.5"/>
 
-        <!-- News Title: Top left -->
         <TextView
             android:id="@+id/news_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Celebrating International Dance Day - A Global Tribute to the Art of Movement"
+            android:text="Titel Text"
             android:textColor="#222222"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -40,12 +38,11 @@
             app:layout_constraintEnd_toStartOf="@id/news_image"
             android:paddingEnd="12dp"/>
 
-        <!-- News Author: Bottom left -->
         <TextView
             android:id="@+id/news_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Samoda Perera"
+            android:text="Author"
             android:textColor="#888888"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -35,7 +35,6 @@ public class SignupActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance("https://technopulse-default-rtdb.firebaseio.com/").getReference("users");
 
 
-        // Initialize views
         emailInputLayout = findViewById(R.id.emailInputLayout);
         usernameInputLayout = findViewById(R.id.usernameInputLayout);
         passwordInputLayout = findViewById(R.id.passwordInputLayout);
@@ -46,11 +45,9 @@ public class SignupActivity extends AppCompatActivity {
             if (editText != null) {
                 int inputType = editText.getInputType();
                 if ((inputType & InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
-                    // Currently visible, hide password
                     editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                     passwordInputLayout.setEndIconDrawable(R.drawable.ic_visibility_off);
                 } else {
-                    // Currently hidden, show password
                     editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                     passwordInputLayout.setEndIconDrawable(R.drawable.ic_visibility);
                 }
@@ -59,18 +56,16 @@ public class SignupActivity extends AppCompatActivity {
         });
 
         confirmPasswordInputLayout = findViewById(R.id.confirmPasswordInputLayout);
-        confirmPasswordInputLayout.setEndIconDrawable(R.drawable.ic_visibility_off); // default icon (password hidden)
+        confirmPasswordInputLayout.setEndIconDrawable(R.drawable.ic_visibility_off);
 
         confirmPasswordInputLayout.setEndIconOnClickListener(v -> {
             EditText editText = confirmPasswordInputLayout.getEditText();
             if (editText != null) {
                 int inputType = editText.getInputType();
                 if ((inputType & InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
-                    // Currently visible, hide password
                     editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                     confirmPasswordInputLayout.setEndIconDrawable(R.drawable.ic_visibility_off);
                 } else {
-                    // Currently hidden, show password
                     editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                     confirmPasswordInputLayout.setEndIconDrawable(R.drawable.ic_visibility);
                 }
@@ -83,7 +78,6 @@ public class SignupActivity extends AppCompatActivity {
         TextInputEditText passwordEditText = findViewById(R.id.password);
         TextInputEditText confirmPasswordEditText = findViewById(R.id.confirmPassword);
 
-// Email field focus listener
         emailEditText.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
                 emailInputLayout.setHint("");
@@ -94,7 +88,6 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-// Username field focus listener
         usernameEditText.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
                 usernameInputLayout.setHint("");
@@ -105,7 +98,6 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-// Password field focus listener
         passwordEditText.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
                 passwordInputLayout.setHint("");
@@ -116,7 +108,6 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-// Confirm Password field focus listener
         confirmPasswordEditText.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
                 confirmPasswordInputLayout.setHint("");
@@ -132,7 +123,7 @@ public class SignupActivity extends AppCompatActivity {
 
             if (!validateSignUpForm()) {
                 Toast.makeText(this, "Validation failed", Toast.LENGTH_SHORT).show();
-                return; // Stop if validation fails
+                return;
             }
             String email = ((EditText) findViewById(R.id.email)).getText().toString().trim();
             String username = ((EditText) findViewById(R.id.username)).getText().toString().trim();
@@ -150,20 +141,17 @@ public class SignupActivity extends AppCompatActivity {
                             String userId = user.getUid();
                             Log.d("SignupActivity", "User ID: " + userId);
 
-                            // Save username to Realtime Database
                             mDatabase.child(userId).child("username").setValue(username)
                                     .addOnCompleteListener(dbTask -> {
                                         if (dbTask.isSuccessful()) {
-                                            // Show success message
                                             Toast.makeText(this, "Registration successful. Welcome!", Toast.LENGTH_SHORT).show();
 
-                                            // Redirect to DashboardActivity directly
-                                            //Intent intent = new Intent(SignupActivity.this, DashboardActivity.class);
-                                            //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                            //startActivity(intent);
+
+                                            Intent intent = new Intent(SignupActivity.this, DashboardActivity.class);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
                                             finish();
                                         }else {
-                                            // ❗️ Log the error
                                             Exception error = dbTask.getException();
                                             Log.e("SignupActivity", "Failed to save username", error);
                                             Toast.makeText(this, "Failed to save user data: " + error.getMessage(), Toast.LENGTH_LONG).show();
@@ -200,7 +188,6 @@ public class SignupActivity extends AppCompatActivity {
 
         boolean isValid = true;
 
-        // Email validation
         if (email.isEmpty()) {
             emailInputLayout.setError("Email is required");
             isValid = false;
@@ -211,7 +198,6 @@ public class SignupActivity extends AppCompatActivity {
             emailInputLayout.setError(null);
         }
 
-        // Username validation
         if (username.isEmpty()) {
             usernameInputLayout.setError("Username is required");
             isValid = false;
@@ -222,7 +208,6 @@ public class SignupActivity extends AppCompatActivity {
             usernameInputLayout.setError(null);
         }
 
-        // Password validation
         if (password.isEmpty()) {
             passwordInputLayout.setError("Password is required");
             isValid = false;
@@ -233,7 +218,6 @@ public class SignupActivity extends AppCompatActivity {
             passwordInputLayout.setError(null);
         }
 
-        // Confirm password validation
         if (confirmPassword.isEmpty()) {
             confirmPasswordInputLayout.setError("Confirm your password");
             isValid = false;
@@ -281,7 +265,6 @@ public class SignupActivity extends AppCompatActivity {
                                     }
                                 });
                     } else {
-                        // Handle Firebase errors
                         Exception exception = task.getException();
                         String error = exception != null ? exception.getMessage() : "Unknown error";
                         if (error != null && error.toLowerCase().contains("email address is already in use")) {

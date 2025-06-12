@@ -13,7 +13,6 @@
         android:gravity="start"
         android:layout_gravity="center_vertical">
 
-        <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
             android:layout_marginBottom="50dp"
             android:contentDescription="Logo"/>
 
-        <!-- Create Account Title -->
         <TextView
             android:id="@+id/createAccountTitle"
             android:layout_width="wrap_content"
@@ -34,7 +32,6 @@
             android:textColor="#111111"
             android:layout_marginBottom="24dp" />
 
-        <!-- Email Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailInputLayout"
             android:layout_width="match_parent"
@@ -55,7 +52,6 @@
                 android:textColorHint="#888888" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Username Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/usernameInputLayout"
             android:layout_width="match_parent"
@@ -76,7 +72,6 @@
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Password Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordInputLayout"
             android:layout_width="300dp"
@@ -100,7 +95,6 @@
                 android:textColorHint="#888888" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Confirm Password Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirmPasswordInputLayout"
             android:layout_width="300dp"
@@ -124,7 +118,6 @@
                 android:textColorHint="#888888" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Sign Up Button -->
         <Button
             android:id="@+id/signupBtn"
             android:layout_width="match_parent"

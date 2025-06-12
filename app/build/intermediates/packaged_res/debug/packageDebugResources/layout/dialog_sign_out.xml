@@ -10,7 +10,7 @@
         android:id="@+id/sign_out_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Really want to sign out?"
+        android:text="Do you want to sign out?"
         android:textSize="16sp"
         android:textColor="#222"
         android:gravity="center"

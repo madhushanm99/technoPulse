@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
 
             if (currentUser != null) {
 
-
+                startActivity(new Intent(SplashActivity.this, DashboardActivity.class));
             } else {
 
                 startActivity(new Intent(SplashActivity.this, Splash2Activity.class));

@@ -20,7 +20,6 @@
             android:layout_marginBottom="50dp"
             android:contentDescription="Logo"/>
 
-    <!-- Hello Title -->
     <TextView
         android:id="@+id/helloTitle"
         android:layout_width="wrap_content"
@@ -32,7 +31,6 @@
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Welcome Message -->
     <TextView
         android:id="@+id/welcomeMessage"
         android:layout_width="match_parent"
@@ -46,7 +44,6 @@ update, and event that matters."
         android:gravity="center"
         android:layout_marginBottom="32dp"/>
 
-    <!-- Login Button -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
@@ -58,7 +55,6 @@ update, and event that matters."
         android:background="@drawable/rounded_blue_button"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Sign Up Button -->
     <Button
         android:id="@+id/signupButton"
         android:layout_width="match_parent"

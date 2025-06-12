@@ -29,7 +29,6 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        // Initialize views
         emailInputLayout = findViewById(R.id.emailInputLayout);
         passwordInputLayout = findViewById(R.id.passwordInputLayout);
         passwordInputLayout.setEndIconDrawable(R.drawable.ic_visibility_off);
@@ -83,7 +82,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-// Password field focus listener
         passwordEditText.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
                 passwordInputLayout.setHint("");
@@ -170,12 +168,10 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
-                            // Proceed to dashboard without checking email verification
-                            //startActivity(new Intent(this, DashboardActivity.class));
+                            startActivity(new Intent(this, DashboardActivity.class));
                             finish();
                         }
                     } else {
-                        // Login failed
                         Toast.makeText(this, "Login failed: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });

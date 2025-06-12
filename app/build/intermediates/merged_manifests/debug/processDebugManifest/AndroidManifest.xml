@@ -31,8 +31,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Techno_Pulse" >
-
-        <!-- Main (Launch) Activity -->
         <activity
             android:name="com.example.techno_pulse.SplashActivity"
             android:exported="true" >
@@ -43,21 +41,15 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.techno_pulse.Splash2Activity" />
-
-        <!-- Signup Activity -->
         <activity
             android:name="com.example.techno_pulse.SignupActivity"
             android:exported="false"
             android:theme="@style/Theme.Techno_Pulse"
             android:windowSoftInputMode="adjustResize" />
-
-        <!-- Login Activity -->
         <activity
             android:name="com.example.techno_pulse.LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.Techno_Pulse" />
-
-        <!-- Dashboard Activity -->
         <activity
             android:name="com.example.techno_pulse.DashboardActivity"
             android:exported="false"

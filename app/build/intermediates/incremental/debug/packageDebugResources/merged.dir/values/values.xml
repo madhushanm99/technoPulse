@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="white">#FFFFFFFF</color>
     <string name="app_name">Techno_Pulse</string>
-    <string name="article_body">In a vibrant celebration of Sinhala and Tamil New Year traditions, the Purawara Wasanthaya – Aurudu Uthsawaya 2025 was successfully held on the 26th of April 2025 at the Faculty of Technology premises, University of Colombo. The event was proudly organized by the Students Welfare Society of the faculty.\n\nThe festival brought together students, academic staff, and well-wishers in a colorful display of unity and culture. Traditional games, music, dance performances, and mouth-watering festive treats filled the day with joy and excitement. The Aurudu Kumara and Kumariya contests were a special highlight, alongside events such as pillow fighting (Kotta pora), tug-of-war, and the ever-popular kana mutti bindeema.</string>
-    <string name="article_caption">Held on April 26th at the Faculty of Technology, University of Colombo</string>
-    <string name="article_title">Purawara Wasanthaya Aurudu Uthsawaya 2025 Celebrated with Cultural Splendor</string>
-    <string name="featured_news_author">Hiruka Thathsara</string>
-    <string name="featured_news_title">Purawara Wasanthaya Aurudu Uthsawaya 2025 Celebrated with Cultural Splendor</string>
     <string name="gcm_defaultSenderId" translatable="false">218000705618</string>
     <string name="google_api_key" translatable="false">AIzaSyDH0pow9Twp6fUNzE6y2RcVgDGbQuL4WeY</string>
     <string name="google_app_id" translatable="false">1:218000705618:android:15ae0554691407485bf78b</string>
@@ -25,6 +13,10 @@
     <string name="tab_academic">Academic</string>
     <string name="tab_events">Events</string>
     <string name="tab_sports">Sports</string>
+    <style name="CircleImageShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
     <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
@@ -34,6 +26,5 @@
     <item name="android:windowExitAnimation">@anim/slide_up</item>
 </style>
     <style name="Theme.Techno_Pulse" parent="Theme.MaterialComponents.Light.NoActionBar">
-        
     </style>
 </resources>

@@ -4,110 +4,72 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal">
+    android:layout_height="match_parent">
 
-    <!-- Main Content -->
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#FFFFFF">
+        android:layout_height="match_parent">
 
-        <!-- Top Bar -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="9dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp">
-
-            <!-- Hamburger Menu Icon -->
-            <ImageView
-                android:id="@+id/menu_icon"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/ic_menu"
-                android:contentDescription="Menu"
-                android:padding="4dp"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-
-            <!-- Profile Image -->
-            <ImageView
-                android:id="@+id/profile_image"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/profile_pic"
-                android:background="@drawable/circle_bg"
-                android:scaleType="centerCrop"
-                android:contentDescription="Profile"
-                android:layout_marginEnd="8dp"/>
-        </LinearLayout>
-
-        <!-- Tabs -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="#FFFFFF">
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/tablayout_bg"
-                app:tabIndicatorHeight="0dp"
-                app:tabBackground="@drawable/tab_selector"
-                app:tabSelectedTextColor="#2962FF"
-                app:tabTextColor="#000000"
-                app:tabMode="fixed"
-                android:layout_marginHorizontal="20dp">
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tab_sports"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_sports"/>
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tab_academic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_academic"/>
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tab_events"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_events"/>
-            </com.google.android.material.tabs.TabLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-
-        <!-- Main News Content -->
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:fillViewport="true">
-
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:paddingBottom="72dp">
             <LinearLayout
-                android:id="@+id/news_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="9dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_menu"
+                    android:contentDescription="Menu"
+                    android:padding="4dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profile_pic"
+                    android:background="@drawable/circle_bg"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Profile"
+                    android:layout_marginEnd="8dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF">
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
 
                 <LinearLayout
+                    android:id="@+id/news_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-                    <!-- Image Slider -->
                     <androidx.viewpager2.widget.ViewPager2
                         android:id="@+id/featuredNewsPager"
                         android:layout_width="match_parent"
@@ -115,30 +77,57 @@
                         android:clipToPadding="false"
                         android:background="@drawable/rounded_corners" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_news"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#111111"
+                        android:layout_marginVertical="30dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/newsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"/>
                 </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tablayout_bg"
+            android:layout_marginBottom="25dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#3e50b4"
+            app:tabTextColor="#000000">
 
-                <!-- Latest News Section -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/latest_news"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="#111111"
-                    android:layout_marginVertical="30dp"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_sports" />
 
-                <!-- News List -->
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/newsRecyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:scrollbars="vertical"/>
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-    </LinearLayout>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_academic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_academic" />
 
-    <!-- Navigation Drawer -->
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_events" />
+        </com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="280dp"
